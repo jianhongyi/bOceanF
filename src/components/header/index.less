@@ -1,0 +1,62 @@
+.header{
+  display: flex;
+  .add{
+    flex: 1;
+    .addIcon{
+      width: 26px;
+      height: 16px;
+      padding-right: 8px;
+    }
+  }
+  .link{
+    justify-content: right;
+    display: flex;
+    ul,li{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #858A8F;
+    }
+    ul{
+      display: flex;
+    }
+    li{
+      padding: 0 15px;
+      position: relative;
+      &::after{
+        content: '';
+        height: 14px;
+        width: 1px;
+        background:#858A8F;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.3;
+      }
+      &:last-child{
+        &::after{
+          display: none;
+        }
+      }
+    }
+    .out{
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #858A8F;
+      cursor: pointer;
+    }
+  }
+}
+.prdName{
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+  &:focus{
+    outline:none
+  }
+}

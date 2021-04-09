@@ -1,0 +1,73 @@
+.uploadModal {
+  .item {
+    display: flex;
+    padding-right: 38px;
+    margin-bottom: 20px;
+    .title {
+      width: 98px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #2e3c63;
+      margin-right: 10px;
+      text-align: right;
+      height: 30px;
+      line-height: 30px;
+    }
+    .value {
+      flex: 1;
+      display: flex;
+      .upSelect {
+        flex: 1;
+      }
+      .cntrol {
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 10px;
+        color: rgba(48, 123, 255, 1);
+        cursor: pointer;
+        text-align: right;
+        &:hover{
+          color: rgba(48, 100, 255, 1);
+        }
+      }
+      .upButton {
+        margin-right: 20px;
+      }
+      .upLine {
+        flex: 1;
+        .fileName {
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #a0a5ab;
+          margin-bottom: -5px;
+          &.fillFile{
+            color: rgba(48, 123, 255, 1);
+          }
+        }
+      }
+      &.tree {
+        width: 326px;
+        height: 230px;
+        padding-top: 10px;
+        border-radius: 2px;
+        padding-left: 10px;
+        border: 1px solid rgba(160, 165, 171, 0.3);
+        box-sizing: border-box;
+        .ant-tree-list {
+          width: 310px;
+        }
+      
+      }
+    }
+  }
+  .ant-tree-list-scrollbar-thumb{
+    width: 4px !important;
+    background: rgba(48, 123, 255, 0.5) !important;
+  }
+  .ant-modal-footer{
+    text-align: center;
+  }
+}
